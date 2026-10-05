@@ -1,0 +1,18 @@
+TURBO KART 3D - PSP KURULUM
+
+YOL 1 - Bilgisayara hicbir sey kurmadan (en kolayi): GitHub ile
+  1. github.com'da ucretsiz hesap ac, "New repository" ile bos bir depo olustur.
+  2. Bu klasorun icindeki TUM dosyalari (main.c, Makefile, .github klasoru dahil) depoya yukle.
+  3. Ustteki "Actions" sekmesine gir, "PSP derle" calismasinin bitmesini bekle (1-2 dk).
+  4. Calisma sayfasinin altindaki "TurboKart3D" paketini indir, zip'i ac -> EBOOT.PBP cikar.
+
+YOL 2 - Docker kuruluysa:
+  docker run --rm -v "$PWD":/src -w /src pspdev/pspdev make
+
+PSP'DE CALISTIRMA
+  - Ozel yazilimli (CFW) PSP'de: EBOOT.PBP'yi su klasore koy:
+      Hafiza karti:/PSP/GAME/TurboKart3D/EBOOT.PBP
+  - Bilgisayarda denemek icin: PPSSPP emulatorunde EBOOT.PBP'yi ac.
+
+KONTROLLER
+  Analog/D-pad direksiyon, X gaz, Kare fren, R/L drift, Daire ozel guc, START yeniden baslat.
